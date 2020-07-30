@@ -1,0 +1,21 @@
+
+
+{{#each this}}
+<div class="d-flex justify-content-around">
+<div><h2 class='name-countrie_big bold-text'>{{name}}</h1>
+<ul class="countries-List">
+  <li><span class='bold-text'>Capital: </span>{{capital}}</li>
+  <li><span class='bold-text'>Population:</span> {{population}}</li>
+  <li><span class='bold-text'>Languages:</span>
+    <ul class="list-languages">
+    {{#each languages}}
+      <li> {{name}}</li>
+      {{/each}}
+    </ul>
+  </li>
+</ul></div>
+<img class="flag" src="{{flag}}" alt="Флаг{{name}} width="189" height="255""></div>
+{{/each}}
+
+
+
